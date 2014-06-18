@@ -9,20 +9,29 @@
 
     var customIcons = {
       blue: {
-        icon: 'http://labs.google.com/ridefinder/images/mm_20_blue.png'
+        icon: 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png'
       },
       red: {
-        icon: 'http://labs.google.com/ridefinder/images/mm_20_red.png'
+        icon: 'http://maps.google.com/mapfiles/ms/icons/red-dot.png'
       },
       purple: {
-          icon: 'http://labs.google.com/ridefinder/images/mm_20_purple.png'
-        }
+          icon: 'http://maps.google.com/mapfiles/ms/icons/purple-dot.png'
+      },
+      orange: {
+    	  icon: 'http://maps.google.com/mapfiles/ms/icons/orange-dot.png'
+      },
+      green: {
+    	  icon: 'http://maps.google.com/mapfiles/ms/icons/green-dot.png'
+      },
+      yellow: {
+    	  icon: 'http://maps.google.com/mapfiles/ms/icons/yellow-dot.png'
+      }
     };
 
     function load() {
       var map = new google.maps.Map(document.getElementById("map"), {
         center: new google.maps.LatLng(40.451391, -86.162499),
-        zoom: 13,
+        zoom: 12,
         mapTypeId: 'roadmap'
       });
       var infoWindow = new google.maps.InfoWindow;
